@@ -143,6 +143,7 @@ nav ul li a {
         background-size: cover;
         background-repeat: no-repeat;
         height: fit-content;
+        margin-bottom: 50px;
     }
     #grandtour {
         background-image: url(image/sunset.jpg);
@@ -150,18 +151,23 @@ nav ul li a {
         background-size: cover;
         background-repeat: no-repeat;
         height: fit-content;
+        margin-bottom: 50px;
     }
     #banteaysrei {
         background-color: rgb(78, 68, 36);
+        margin-bottom: 50px;
     }
     #bengmealea {
         background-color: rgb(78, 68, 36);
+        margin-bottom: 50px;
     }
     #kohker {
         background-color: rgb(78, 68, 36);
+        margin-bottom: 50px;
     }
     #kampongphluk {
         background-color: rgb(78, 68, 36);
+        margin-bottom: 50px;
     }
     #cyclingtour {
         background-image: url(image/sunsetcycling.jpg);
@@ -169,6 +175,7 @@ nav ul li a {
         background-size: cover;
         background-repeat: no-repeat;
         height: fit-content;
+        margin-bottom: 50px;
     }
     #streetfoodtour {
         background-image: url(image/bgstreetfood.jpg);
@@ -183,6 +190,7 @@ nav ul li a {
         background-size: cover;
         background-repeat: no-repeat;
         height: fit-content;
+        margin-bottom: 50px;
     }
     #phare {
         background-image: url(image/bgphare.jpg);
@@ -190,13 +198,15 @@ nav ul li a {
         background-size: cover;
         background-repeat: no-repeat;
         height: fit-content;
+        margin-bottom: 50px;
     }
     #cookingclass {
         background-image: url(image/bgcookingclass.jpg);
         background-position: -200px;
         background-size: cover;
         background-repeat: no-repeat;
-        height: fit-content; 
+        height: fit-content;
+        margin-bottom: 50px;
     }
     .btpic {
         margin-bottom: 15px;
