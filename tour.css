@@ -73,6 +73,12 @@ nav ul li a {
     text-decoration: none;
 }
 @media only screen and (max-width: 600px){
+    hmtl {
+        height: -webkit-fill-available;
+    }
+    body {
+        height: -webkit-fill-available;
+    }
     nav {
         padding-top: 70px;
     }
