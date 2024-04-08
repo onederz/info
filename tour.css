@@ -274,7 +274,6 @@ section {
     height: 100vh;
     justify-content: center;
     scroll-snap-align: start;
-    margin-bottom: 20px;
 }
 .container {
     scroll-snap-type: y mandatory;
