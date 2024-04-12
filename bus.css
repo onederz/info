@@ -261,7 +261,7 @@ h1 {
 }
 section {
     padding-top: 5%;
-    height: 100vh;
+    height: 100dvh;
     display: block;
     justify-content: center;
     scroll-snap-align: start;
@@ -269,7 +269,7 @@ section {
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100dvh;
 }
 .buspic {
     height: 10px;
