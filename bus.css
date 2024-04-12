@@ -9,7 +9,7 @@
 .box {
     width: fit-content;
     height: 100%;
-    background-color: #161616;
+    background-color: #161616de;
     position: fixed;
     text-align: left;
     z-index: 1;
@@ -26,9 +26,9 @@
 }
 .menu_icon_box {
     z-index: 2;
-    width: 115px;
+    width: 90px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 1px;
     margin-top: 10px;
     position: absolute;
     border-radius: 10px;
@@ -36,31 +36,32 @@
     transition: 0.2s;
 }
 .line1 , .line2 , .line3 {
-    width: 100px;
-    height: 17px;
-    background-color: #000;
+    box-shadow: 0px 0px 10px 2px;
+    width: 60px;
+    height: 9px;
+    background-color: #d1d1d1;
     border-radius: 50px;
-    margin: 5px 10px;
+    margin: 5px 5px;
     transition: 0.4s;
 }
 .active .line1 {
-    transform: translate(0px , 32px)rotate(45deg);
+    transform: translate(0px , 14px)rotate(45deg);
 }
 .active .line2 {
     opacity: 0;
 }
 .active .line3 {
-    transform: translate(0px , -32px)rotate(-45deg);
+    transform: translate(0px , -14px)rotate(-45deg);
 }
 nav {
-    padding-top: 240px;
+    padding-top: 100px;
 }
 nav ul {
-    margin: 0px 30px;
+    margin: 0px 5px;
 }
 nav ul li {
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: 0.3s;
 }
 nav ul li:hover {
@@ -69,8 +70,8 @@ nav ul li:hover {
 }
 nav ul li a {
     color: #fff;
-    font-size: 50px;
-    padding: 10px 30px;
+    font-size: 30px;
+    padding: 5px 5px;
     display: block;
     text-decoration: none;
 }
@@ -147,9 +148,6 @@ nav ul li a {
         padding: 0;
         box-shadow: rgba(0, 0, 0, 0.679) 10px 10px 10px;
     }
-    th, td {
-        height: 30px;
-    }
     th {
         font-size: 13px;
         border: 1px solid grey;
@@ -191,37 +189,50 @@ nav ul li a {
     .bustable {
         margin-bottom: 20px;
     }
-    table, h1 {
-    scale: 0; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: 150px;
-    animation-range-end: 300px;
+    .buspic {
+        height: 5px;
+    }
+    .departure, .duration, .price {
+        height: 35px;
+    }
 }
-@keyframes fade-in {
-    to {scale: 1; opacity: 1;}
+th {
+    font-size: 13px;
+    border: 1px solid grey;
 }
+.buspic {
+    border: hidden;
 }
-.plok {
-    background-color: rgba(255, 255, 255, 0);
+td {
+    border: 1px solid grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
 }
-.bek {
-    height: 0;
-    background-color: rgba(255, 255, 255, 0);
-    border: 0;
-    padding: 10px;
-    box-shadow: none;
+.departure {
+    border: 1px solid grey;
+    width: 100px;
 }
-.bek1 {
-    background-color: rgba(255, 255, 255, 0);
-    border: 0;
-    height: 0;
-    box-shadow: none;
+.duration {
+    border: 1px solid grey;
+    width: 100px;
+}
+.price {
+    border: 1px solid grey;
+    width: 120px;
+}
+.buspicture {
+    border: none;
+    margin-top: 15px;
+    padding-bottom: 0;
+}
+body {
+    background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
 }
 td {
     font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(255, 255, 255);
-    background-color: rgb(63, 63, 63);
+    background-color: rgba(35, 71, 73, 0.685);
     text-align: center;
 }
 th {
@@ -231,7 +242,7 @@ th {
     font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     padding-top: 3px;
     text-align: center;
-    background-color: rgb(36, 43, 43);
+    background-color: rgb(24, 47, 47);
 }
 table {
     border-collapse: collapse;
@@ -240,6 +251,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.679) 10px 10px 10px;
 }
 h1 {
     color: white;
@@ -259,35 +271,25 @@ section {
     overflow-y: scroll;
     height: 100vh;
 }
+.buspic {
+    height: 10px;
+}
+.departure, .duration, .price {
+    height: 35px;
+}
 .buspic, img {
-    padding: 0;
+    padding-top: 2px;
     width: 70px;
     background-color: white;
 }
-.buspic {
-    padding: 3px;
-    background-color: rgb(167, 167, 167);
-    animation: mymove 2s infinite;
+.bustable {
+    margin-bottom: 20px;
 }
-  @keyframes mymove {
-    from {background-color: rgb(150, 153, 156);}
-    to {background-color: rgb(107, 115, 122);}
-  }
 img {
     background-color: rgba(255, 255, 255, 0);
 }
 .buslogo {
     width: 30px;
-}
-table, h1 {
-    scale: 0; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: 150px;
-    animation-range-end: 300px;
-}
-@keyframes fade-in {
-    to {scale: 1; opacity: 1;}
 }
 .symbol {
     padding-left: 2.5px;
@@ -351,7 +353,7 @@ table, h1 {
     width: 100px;
 }
     .buscompany {
-        background-color: rgb(66, 75, 79);
+        background-color: rgba(0, 119, 137, 0.552);
         padding: 5px;
         width: 40%;
         border: 10px  rgb(0, 0, 0);
