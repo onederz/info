@@ -11,7 +11,7 @@ body {
     height: -webkit-fill-available;
     font-family: sans-serif;
     overflow: hidden;
-    background-color: rgb(127, 161, 157);
+    background-color: rgb(212, 212, 212);
 }
 a {
     text-decoration: none;
@@ -50,11 +50,14 @@ a {
 }
 
 .description {
-    padding-left: 0.5rem;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 102, 80);
+    padding: 0.5rem;
 }
 
 .card {
-    background-color: rgb(189, 225, 225);
+    background-color: rgb(184, 196, 196);
     margin-top: 1rem;
     max-width: 300px;
     height: 100px;
@@ -73,9 +76,12 @@ a {
 }
 
 .card-front, .card-back {
+    background-color: rgb(184, 196, 196);
     position: absolute;
     padding: 10px;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -120,6 +126,8 @@ p {
 }
 
 .image {
+    position: relative;
+    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
     width: 4rem;
@@ -127,11 +135,73 @@ p {
     background-color: #000000;
 }
 
+.banteaysrei {
+    position: relative;
+}
+
+.angkorwat {
+    background-image: url(img/angkorwat.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 3.5rem;
+}
+.bayon {
+    background-image: url(img/bayon.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 3.5rem;
+}
+.takeo {
+    background-image: url(img/takeo.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 3.5rem;
+}
+.tapromh {
+    background-image: url(img/tapromh.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 3.5rem;
+}
+.banteaykdei {
+    background-image: url(img/banteaykdei.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
 .image-slide {
+    position: relative;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     background: white;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
 }
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb00;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #71717100;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
