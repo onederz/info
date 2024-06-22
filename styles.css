@@ -4,38 +4,51 @@
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
     font-family: sans-serif;
     overflow: hidden;
-    background-color: rgb(98, 121, 148);
+    background-color: rgb(127, 161, 157);
 }
 a {
     text-decoration: none;
 }
 
 .main-container {
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    flex: wrap;
+    display: flex;
 }
 #tour {
-    background: rgb(255, 255, 255);
+    position: relative;
+    flex: none;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 #bus {
-    background: rgb(235, 200, 200);
+    position: relative;
+    background-color: rgb(24, 31, 31);
+    flex: none;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .header-info {
+    height: 6vh;
+    z-index: 10;
     top: 0;
     position: fixed;
-    margin-top: 0.5rem;
     width: 100%;
 }
 .info {
@@ -45,6 +58,7 @@ a {
 }
 
 .btn-button {
+    z-index: 10;
     display: flex;
     bottom: 0;
     position: fixed;
@@ -59,6 +73,7 @@ a {
 }
 
 .btn-bus, .btn-tour {
+    z-index: 100;
     width: 100%;
     height: 2rem;
     margin-left: auto;
@@ -73,39 +88,87 @@ a {
 
 .description {
     padding-left: 0.5rem;
-    padding-top: 2.5rem;
 }
 
 .card {
+    background-color: rgb(189, 225, 225);
     margin-top: 1rem;
-max-width: 300px;
-height: 100px;
-margin-left: auto;
-margin-right: auto;
-perspective: 1000px;
-cursor: pointer;
-transition: transform 1s;
-transform-style: preserve-3d;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    max-width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
 .card.flipped {
-transform: rotateY( 180deg );
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transform: rotateY( 180deg );
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
 .card-front, .card-back {
-position: absolute;
-padding: 10px;
-backface-visibility: hidden;
-justify-content: center;
-align-items: center;
+    position: absolute;
+    padding: 10px;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-back {
-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 p {
     line-height: 1.3;
+}
+
+.kohker {
+    position: relative;
+}
+
+.section {
+    margin-bottom: 10vh;
+    height: 90vh;
+    scroll-snap-align: center;
+}
+
+.ticket-note {
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgb(35, 115, 137);
+}
+.ticket-note1 {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgb(35, 115, 137);
+}
+
+.image-tour {
+    display: flex;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;
+    height: 3.5rem;
+    background-color: #000000;
+}
+
+.image-slide {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    width: 300px;
+    height: 200px;
 }
