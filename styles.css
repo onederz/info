@@ -24,13 +24,15 @@ a {
     max-width: 700px;
     display: flex;
 }
+
+.for-tour, .for-bus {
+    height: 100vh;
+}
 #tour {
     position: relative;
     flex: none;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -40,55 +42,11 @@ a {
     position: relative;
     background-color: rgb(24, 31, 31);
     flex: none;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
-}
-
-.header-info {
-    height: 6vh;
-    z-index: 10;
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-.info {
-    color: #000000;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.btn-button {
-    z-index: 10;
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    height: 2rem;
-    background: black;
-}
-
-.btn-tour-logo, .btn-bus-logo {
-    padding-top: 0.5rem;
-    text-align: center;
-}
-
-.btn-bus, .btn-tour {
-    z-index: 100;
-    width: 100%;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn-bus {
-    background-color: rgb(5, 19, 82);
-}
-.btn-tour {
-    background-color: brown;
 }
 
 .description {
@@ -135,13 +93,13 @@ p {
 }
 
 .section {
-    margin-bottom: 10vh;
-    height: 90vh;
+    height: 95vh;
     scroll-snap-align: center;
 }
 
 .ticket-note {
     bottom: 0;
+    position: -webkit-sticky;
     position: sticky;
     width: 100%;
     margin-top: 0.5rem;
