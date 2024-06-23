@@ -46,3 +46,123 @@ function showSlideskp() {
   dots[slideIndexkp-1].className += " active";
   setTimeout(showSlideskp, 2000); // Change image every 2 seconds
 }
+
+let slideIndexceramic = 0;
+showSlidesceramic();
+
+function showSlidesceramic() {
+  let i;
+  let slidesceramic = document.getElementsByClassName("mySlides-ceramic");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slidesceramic.length; i++) {
+    slidesceramic[i].style.display = "none";  
+  }
+  slideIndexceramic++;
+  if (slideIndexceramic > slidesceramic.length) {slideIndexceramic = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesceramic[slideIndexceramic-1].style.display = "block";  
+  dots[slideIndexceramic-1].className += " active";
+  setTimeout(showSlidesceramic, 2000); // Change image every 2 seconds
+}
+
+let slideIndexkohker = 0;
+showSlideskohker();
+
+function showSlideskohker() {
+  let i;
+  let slideskohker = document.getElementsByClassName("mySlides-kohker");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slideskohker.length; i++) {
+    slideskohker[i].style.display = "none";  
+  }
+  slideIndexkohker++;
+  if (slideIndexkohker > slideskohker.length) {slideIndexkohker = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideskohker[slideIndexkohker-1].style.display = "block";  
+  dots[slideIndexkohker-1].className += " active";
+  setTimeout(showSlideskohker, 2000); // Change image every 2 seconds
+}
+
+let slideIndexbt = 0;
+showSlidesbt();
+
+function showSlidesbt() {
+  let i;
+  let slidesbt = document.getElementsByClassName("mySlides-bt");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slidesbt.length; i++) {
+    slidesbt[i].style.display = "none";  
+  }
+  slideIndexbt++;
+  if (slideIndexbt > slidesbt.length) {slideIndexbt = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesbt[slideIndexbt-1].style.display = "block";  
+  dots[slideIndexbt-1].className += " active";
+  setTimeout(showSlidesbt, 2000); // Change image every 2 seconds
+}
+
+let slideIndexphare = 0;
+showSlidesphare();
+
+function showSlidesphare() {
+  let i;
+  let slidesphare = document.getElementsByClassName("mySlides-phare");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slidesphare.length; i++) {
+    slidesphare[i].style.display = "none";  
+  }
+  slideIndexphare++;
+  if (slideIndexphare > slidesphare.length) {slideIndexphare = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesphare[slideIndexphare-1].style.display = "block";  
+  dots[slideIndexphare-1].className += " active";
+  setTimeout(showSlidesphare, 5000); // Change image every 5 seconds
+}
+
+let slideIndexcooking = 0;
+showSlidescooking();
+
+function showSlidescooking() {
+  let i;
+  let slidescooking = document.getElementsByClassName("mySlides-cooking");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slidescooking.length; i++) {
+    slidescooking[i].style.display = "none";  
+  }
+  slideIndexcooking++;
+  if (slideIndexcooking > slidescooking.length) {slideIndexcooking = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidescooking[slideIndexcooking-1].style.display = "block";  
+  dots[slideIndexcooking-1].className += " active";
+  setTimeout(showSlidescooking, 2000); // Change image every 2 seconds
+}
+
+let slideIndexst = 0;
+showSlidesst();
+
+function showSlidesst() {
+  let i;
+  let slidesst = document.getElementsByClassName("mySlides-st");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slidesst.length; i++) {
+    slidesst[i].style.display = "none";  
+  }
+  slideIndexst++;
+  if (slideIndexst > slidesst.length) {slideIndexst = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesst[slideIndexst-1].style.display = "block";  
+  dots[slideIndexst-1].className += " active";
+  setTimeout(showSlidesst, 3000); // Change image every 2 seconds
+}
