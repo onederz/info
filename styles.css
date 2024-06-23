@@ -13,6 +13,10 @@ body {
     overflow: hidden;
     background-color: rgb(212, 212, 212);
 }
+
+.onederz-logo {
+    width: 100px;
+}
 a {
     text-decoration: none;
 }
@@ -126,6 +130,7 @@ p {
 }
 
 .image {
+    color: aliceblue;
     position: relative;
     margin-top: 0.5rem;
     margin-left: auto;
@@ -165,6 +170,41 @@ p {
 }
 .banteaykdei {
     background-image: url(img/banteaykdei.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
+.preahkhan {
+    background-image: url(img/preahkhan.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
+.tasom {
+    background-image: url(img/tasom.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
+.neakpoun {
+    background-image: url(img/neakpoun.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
+.prerub {
+    background-image: url(img/prerub.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+
+.bakheng {
+    background-image: url(img/bakheng.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: 4rem 4rem;
