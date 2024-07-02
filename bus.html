@@ -11,9 +11,27 @@
     <div class="main-container">
         <!--This is for tour templet-->
         <div class="for-bus">
+        <div  style="position: absolute; right: 0; top: 0.5rem;">
+            <select class="search" name="search" id="" onchange="location = this.value;">
+            <option value="">Destination</option>
+            <option value="#phnompenhday">Phnom Penh(D)</option>
+            <option value="#phnompenhnight">Phnom Penh(N)</option>
+            <option value="#sihanoukville">Sihanoukville</option>
+            <option value="#island">Island</option>
+            <option value="#battambang">Battambang</option>
+            <option value="#preahvihear">Preah Vihear</option>
+            <option value="#stuengtreng">Stueng Treng</option>
+            <option value="#rattanakiri">Rattanakiri</option>
+            <option value="#mondulkiri">Mondulkiri</option>
+            <option value="#kampot">Kampot</option>
+            <option value="#bangkok">Bangkok</option>
+            <option value="#hochiminh">Ho Chi Minh</option>
+            <option value="#airport">Airport</option>
+        </select>
+    </div>
         <div style="font-size: 20px; width: 100%; text-align: center; padding-top: 10px;position: relative;"><a href="index.html"><img src="img/onederz-logo.png" alt="" class="onederz-logo" style="position: absolute; left: 0.1rem; top: 0.1rem;"></a><font color="green">Transportaion</font></div>
         <section id="bus">
-            <div class="section">
+            <div class="section" id="phnompenhday">
                 <div style="text-align: center; width: 100%; padding-top: 1rem;">To Phnom Penh (Day Bus)</div>
             <div class="card" style="max-width: 350px; height: 130px;">
                 <div class="card-front">
@@ -132,7 +150,7 @@
                 </div>
             </div>
             </div>
-            <div class="section">
+            <div class="section" id="phnompenhnight">
                 <div style="text-align: center; width: 100%; padding-top: 1rem;">To Phnom Penh (Night Bus)</div>
             <div class="card" style="max-width: 350px; height: 98px;">
                 <div class="card-front">
@@ -146,12 +164,12 @@
                             </tr>
                             <tr>
                                 <td rowspan="2">Giant Ibis</td>
-                                <td>08:45 AM</td>
+                                <td>10:00 PM</td>
                                 <td rowspan="2">6 hours</td>
                                 <td rowspan="2">17 USD</td>
                             </tr>
                             <tr>
-                                <td>09:45 AM</td>
+                                <td>10:30 PM</td>
                             </tr>
                         </table>
                     </div>
@@ -204,7 +222,7 @@
 
             </div>
 
-            <div class="section">
+            <div class="section" id="sihanoukville">
                 <div style="text-align: center; width: 100%; padding-top: 1rem;">To Sihanoukville</div>
             <div class="card" style="max-width: 350px; height: 98px;">
                 <div class="card-front">
@@ -306,9 +324,567 @@
                 </div>
             </div>
 
-            </div>            
+            
+            </div>
+            <div class="section" id="island">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Koh Rong / Koh Rong Sanleom</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>08:30 PM</td>
+                                <td>12 hours</td>
+                                <td>40.5 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Bus (30 beds)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Toilet in the bus</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/luxurybus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 0.8rem; max-width: 350px; margin-left: auto; margin-right: auto;">
+            <p>The bus arrive at Sihanoukville and you will get pick up to the pair for the ferry departure at 8:30 AM to the Island. The price is included 2 ways ferry drop off and return.</p>
+            </div>
+            </div>
+            
+            <div class="section" id="battambang">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Battambang</div>
+           
+            <div class="card" style="max-width: 350px; height: 165px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Vireak Buntham</td>
+                                <td>7:00 AM</td>
+                                <td rowspan="4">3 hours</td>
+                                <td rowspan="4">11 USD</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                            </tr>
+                            <tr>
+                               <td>5:00 PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Coaster (16 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/minibus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Reak Smey</td>
+                                <td>08:30 AM</td>
+                                <td>3 hours</td>
+                                <td>12 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Big Bus (41 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Boat</td>
+                                <td>07:30 AM</td>
+                                <td>7 hours</td>
+                                <td>30 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Boat</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/boat.png" alt="" width="120px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="preahvihear">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Preah Vihear</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>07:30 AM</td>
+                                <td>3 hours</td>
+                                <td>11.5 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Coaster (16 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/minibus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="stuengtreng">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Stueng Treng</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>07:30 AM</td>
+                                <td>5 hours</td>
+                                <td>16 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Coaster (16 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/minibus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="rattanakiri">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Rattanakiri</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>07:30 AM</td>
+                                <td>8 hours</td>
+                                <td>18 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Coaster (16 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/minibus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="mondulkiri">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Mondulkiri</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>07:30 AM</td>
+                                <td>12 hours</td>
+                                <td>23 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Coaster (16 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/minibus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="kampot">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Kampot</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Giant Ibis</td>
+                                <td>10:30 PM</td>
+                                <td>12 hours</td>
+                                <td>25 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Bus (30 Beds)</p></b>
+                            <p style="padding-top: 1.5rem;">- No pick up</p>
+                            <p>- Toilet in the bus</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/giantsleepbus.png" alt="" width="100px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="bangkok">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Bangkok</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Giant Ibis</td>
+                                <td>7:45 AM</td>
+                                <td rowspan="2">8 hours</td>
+                                <td rowspan="2">43 USD</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Exclusive VIP Seater (28 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/giantbangkok.png" alt="" width="110px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>08:00 AM</td>
+                                <td>8 hours</td>
+                                <td>24.5 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Seating BusT (40 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/bangkokbus.png" alt="" width="120px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Vireak Buntham</td>
+                                <td>10:00 AM</td>
+                                <td>8 hours</td>
+                                <td>27 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">VIP Van BKK (10 Seats)</p></b>
+                            <p style="padding-top: 1.5rem;">- Free pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/bangkokvan.png" alt="" width="120px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section" id="hochiminh">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To Ho Chi Minh</div>
+           
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td>Giant Ibis</td>
+                                <td>10:30 PM</td>
+                                <td>16 hours</td>
+                                <td>52 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Sleeper Bus (30 Beds)</p></b>
+                            <p style="padding-top: 1.5rem;">- No pick up</p>
+                            <p>- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/giantsleepbus.png" alt="" width="120px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 0.8rem; max-width: 350px; margin-left: auto; margin-right: auto;">
+                <p>The bus going to change in Phnom Penh and departure at 8:00 AM with Exclusive VIP Seater.</p>
+                </div>
+            </div>
+
+            <div class="section" id="airport">
+                <div style="text-align: center; width: 100%; padding-top: 1rem;">To SAI Airport</div>
+           
+            <div class="card" style="max-width: 350px; height: 305px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Company</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="8">Airport BUS</td>
+                                <td>05:30 AM</td>
+                                <td rowspan="8">1 hour</td>
+                                <td rowspan="8">8 USD</td>
+                            </tr>
+                            <tr>
+                                <td>07:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>08:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>01:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td>04:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>07:00 PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Luxury Bus (41 Seats)</p></b>
+                            <p style="top: 2rem; position: absolute; left: 0.5rem;">- Free pick up (except 5:30 AM)</p>
+                            <p style="top: 3.5rem; position: absolute; left: 0.5rem;">- Booking at the reception.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/airportbus.png" alt="" width="200px" style="position: absolute; bottom: 0.5rem; right: 1rem;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 350px; height: 98px;">
+                <div class="card-front">
+                    <div style="width: 100%;">
+                        <table style="text-align: center; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 6rem;">Private Taxi</th>
+                                <th style="width: 6rem;">Departure</th>
+                                <th style="width: 6rem;">Duration</th>
+                                <th style="width: 6rem;">Price</th>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                <td colspan="2">You can choose departure time.</td>
+                                <td>1 hour</td>
+                                <td>27 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div style="padding: 0.4rem; display: flex;">
+                        <div>
+                            <b><p style="position: absolute; left: 0.5rem;">Car (Max 4 people)</p></b>
+                            <p style="top: 2rem; position: absolute; left: 0.5rem; width: 70%;">- Booking at the reception 1 hour in advance</p>
+                            <p style="top: 4.5rem; position: absolute; left: 0.5rem;">- Pick up at the hostel.</p>
+                        </div>
+                        <div style="width: 40%;"><img src="img/taxi.png" alt="" width="120px" style="position: absolute; bottom: 0.5rem; right: 0;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
             </section>
             <div style="position: absolute;
+            z-index: -1;
             margin-left: auto;
             margin-right: auto;
             left: 0;
