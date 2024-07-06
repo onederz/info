@@ -10,17 +10,17 @@
 </head>
 <body>
     <div class="main-container">
-        <div style="font-size: 20px; width: 100%; text-align: center; padding-top: 10px;position: relative;"><a href="index.html"><img src="img/onederz-logo.png" alt="" class="onederz-logo" style="position: absolute; left: 0.1rem; top: 0.1rem;"></a><font color="green">Food Menu</font></div>
-        <section id="food">
+        <div style="font-size: 20px; width: 100%; text-align: center; padding-top: 10px;position: relative;"><a style="border: none; background-color: rgb(212, 212, 212); padding: 0; margin: 0;" href="index.html"><img src="img/onederz-logo.png" alt="" class="onederz-logo" style="position: absolute; left: 0.1rem; top: 0.1rem;"></a><font color="green">Food Menu</font></div>
+        <section id="food" style="display: flex; overflow-x: scroll;">
         <div class="section" style="overflow-y: scroll; height: 95svh;">
         <div style="position: relative; height: 20svh;">
         <div style="position: static; background-color: rgb(212, 212, 212);">
         <div style="width: 100%; text-align: center;"><p style="font-size: 30px;">Breakfast</p><p>Open from 6:30 am - 12:00 pm</p></div>
         <div style="text-align: center;">
         <ul style="display: flex; width: 100%; align-items: center; justify-content: center;">
-       <a href="#khmerbreakfast-show"><li>Khmer Breakfast</li></a>
-       <a href="#healthybreakfast-show"><li>Healthy Breakfast</li></a>
-       <a href="#westernbreakfast-show"><li>Western Breakfast</li></a>
+       <a class="link" href="#khmerbreakfast-show"><li>Khmer Breakfast</li></a>
+       <a class="link" href="#healthybreakfast-show"><li>Healthy Breakfast</li></a>
+       <a class="link" href="#westernbreakfast-show"><li>Western Breakfast</li></a>
         </ul>
     </div>
 </div>
@@ -262,5 +262,11 @@
 
 </section>
     </div>
+    <script>
+        $("a.link").click(function(){
+      $("a.link").css("background-color", "#40826D");
+    $(this).css("background-color", "#948A04");
+});
+    </script>
 </body>
 </html>
