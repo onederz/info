@@ -53,11 +53,11 @@ p {
     display: block;
 }
 
-#khmerbreakfast-show, #healthybreakfast-show, #westernbreakfast-show {
+#khmerbreakfast-show, #healthybreakfast-show, #westernbreakfast-show, #sandwich-show, #burger-show, #wrap-show {
     display: none;
   }
   
-#khmerbreakfast-show:target, #healthybreakfast-show:target, #westernbreakfast-show:target {
+#khmerbreakfast-show:target, #healthybreakfast-show:target, #westernbreakfast-show:target, #sandwich-show:target, #burger-show:target, #wrap-show:target {
     display: block;
   }
 
@@ -75,3 +75,4 @@ a {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
