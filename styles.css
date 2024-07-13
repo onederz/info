@@ -94,7 +94,7 @@ p {
     line-height: 1.3;
 }
 
-.kohker {
+.kohker, .grandtour, .bengmealea, .floatingvillage, .phare, .ceramic {
     position: relative;
 }
 
@@ -329,5 +329,64 @@ p {
   }
   100% {
     left: 0;
+  }
+}
+
+
+
+
+
+details {
+  position:relative;
+}
+details summary {
+  text-align: end;
+  font-weight: bold;
+  display:block;
+  cursor: pointer;
+  color: rgb(231, 206, 63);
+}
+details summary:focus {
+  outline:none;
+}
+details[open] {
+  display:block;
+  padding-bottom:25px;
+  padding-top:10px;
+  animation: open .2s linear;
+}
+details[open] summary {
+  position:absolute;
+  bottom: 0;
+  left:0;
+}
+
+details #open{padding-left:5px;text-align:middle;}
+details #open:after{
+    display: inline-block;
+    position:relative;
+    top: -3px;
+    padding-left: 8px;
+    content: "\00bb";
+    transform: rotate(90deg);
+}
+details[open] #open{display:none;}
+details #close{display:none;}
+details[open] #close{display:block;}
+
+::-webkit-details-marker {display: none;}
+
+
+
+
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
