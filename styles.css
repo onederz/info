@@ -24,6 +24,7 @@ a {
 }
 
 .main-container {
+    scroll-behavior: smooth;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
