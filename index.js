@@ -1,92 +1,63 @@
+
 function showhide() {
-    var d = new Date();
-    var s = document.getElementsByClassName(d.getDay());
-    for (var i = 0; i < s.length; i++) {
-      s[i].style.display = 'block';
-    }
+  var d = new Date();
+  var s = document.getElementsByClassName(d.getDay());
+  for (var i = 0; i < s.length; i++) {
+    s[i].style.display = 'block';
   }
-  
-  showhide();
+}
 
-  //slide Image Monday
+showhide();
 
-  const cardWrapper = document.querySelector('.card-wrapper')
-  const cardWrapperChildren = Array.from(cardWrapper.children)
-  const widthToScroll = cardWrapper.children[0].offsetWidth
-  const arrowPrev = document.querySelector('.arrow.prev')
-  const arrowNext = document.querySelector('.arrow.next')
-  const cardBounding = cardWrapper.getBoundingClientRect()
-  const column = Math.floor(cardWrapper.offsetWidth / (widthToScroll + 0))
-  let currScroll = 0
-  let initPos = 0
-  let clicked = false
-  
-  cardWrapperChildren.slice(-column).reverse().forEach(item=> {
-    cardWrapper.insertAdjacentHTML('afterbegin', item.outerHTML)
-  })
-  
-  cardWrapperChildren.slice(0, column).forEach(item=> {
-    cardWrapper.insertAdjacentHTML('beforeend', item.outerHTML)
-  })
-  
-  const cardImageAndLink = cardWrapper.querySelectorAll('img, a')
-  cardImageAndLink.forEach(item=> {
-    item.setAttribute('draggable', false)
-  })
-  
-  cardWrapper.classList.add('no-smooth')
-  cardWrapper.scrollLeft = cardWrapper.offsetWidth
-  cardWrapper.classList.remove('no-smooth')
-  
-  arrowPrev.onclick = function() {
-    cardWrapper.scrollLeft -= widthToScroll
-  }
-  
-  arrowNext.onclick = function() {
-    cardWrapper.scrollLeft += widthToScroll
-  }
-  
-  cardWrapper.onmousedown = function(e) {
-    cardWrapper.classList.add('grab')
-    initPos = e.clientX - cardBounding.left
-    currScroll = cardWrapper.scrollLeft
-    clicked = true
-  }
-  
-  cardWrapper.onmousemove = function(e) {
-    if(clicked) {
-      const xPos = e.clientX - cardBounding.left
-      cardWrapper.scrollLeft = currScroll + -(xPos - initPos)
-    }
-  }
-  
-  cardWrapper.onmouseup = mouseUpAndLeave
-  cardWrapper.onmouseleave = mouseUpAndLeave
-  
-  function mouseUpAndLeave() {
-    cardWrapper.classList.remove('grab')
-    clicked = false
-  }
-  
-  let autoScroll
-  
-  cardWrapper.onscroll = function() {
-    if(cardWrapper.scrollLeft === 0) {
-      cardWrapper.classList.add('no-smooth')
-      cardWrapper.scrollLeft = cardWrapper.scrollWidth - (1 * cardWrapper.offsetWidth)
-      cardWrapper.classList.remove('no-smooth')
-    } else if(cardWrapper.scrollLeft === cardWrapper.scrollWidth - cardWrapper.offsetWidth) {
-      cardWrapper.classList.add('no-smooth')
-      cardWrapper.scrollLeft = cardWrapper.offsetWidth
-      cardWrapper.classList.remove('no-smooth')
-    }
-  
-    if(autoScroll) {
-      clearTimeout(autoScroll)
-    }
-  
-    autoScroll = setTimeout(()=> {
-      cardWrapper.classList.remove('no-smooth')
-      cardWrapper.scrollLeft += widthToScroll
-    }, 4000)
-  }
+
+var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[d.getMonth()],day_of_month=d.getDate(),current_year=d.getFullYear(),dayOfMonthElement=document.getElementById("current_day"),currentMonthElement=document.getElementById("current_month"),currentYearElement=document.getElementById("current_year");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
+
+
+ /* Sunday carousel */
+ $('#carousel-0').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Monday carousel */
+ $('#carousel-1').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Tuesday carousel */
+ $('#carousel-2').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Wednesday carousel */
+ $('#carousel-3').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Thursday carousel */
+ $('#carousel-4').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Friday carousel */
+ $('#carousel-5').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
+
+ /* Saturday carousel */
+ $('#carousel-6').carousel({
+  interval: 5000,
+  wrap: true,
+  keyboard: true
+});
