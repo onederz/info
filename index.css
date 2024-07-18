@@ -27,7 +27,7 @@ a {
     height: 100svh;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
+    max-width: 500px;
     position: relative;
 }
 
@@ -90,12 +90,26 @@ a {
       left: 0;
     }
   }
+
+  #slide-event-today {
+    position: relative;
+    bottom: -40px;
+  }
+  #slide-event-tomorrow {
+    position: relative;
+  }
+
+
+  .slide-event {
+    width: 100%;
+    position: relative;
+  }
   
 
   .carousel img {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     box-shadow: 2px 2px 10px 2px;
   }
 
@@ -122,7 +136,7 @@ a {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: 30px;
-    height: 3px;
+    height: 4px;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
@@ -134,14 +148,29 @@ a {
 }
 
 .carousel-item {
-  padding-top: 0.7rem;
-  min-height: 350px;
+  padding: 1rem;
+}
+.section-menu {
+  position: relative;
+  height: 25svh;
+}
+.section {
+  height: 75svh;
 }
 
+.menu {
+  justify-content: center;
+  display: flex;
+}
 
-@media only screen and (max-width: 600px) {
-  .carousel-item {
-    padding-top: 0.7rem;
-    min-height: 200px;
+@media screen and (min-height: 740px) {
+  .menu {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: block;
   }
 }
