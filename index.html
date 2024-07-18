@@ -14,28 +14,28 @@
 </head>
 <body>
 
-    <div style="margin: 0.2rem;"><img src="img/onederz-logo.png" alt="" width="120px"></div>
+    <div style="margin: 0.2rem;"><img src="img/onederz-logo.png" alt="" width="90px"></div>
 <div class="main-container-index">
     <section class="section-menu">
 <div class="menu">
 <div style="display: flex; margin: 0.5rem;">
-    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%;"></div>
-    <div>TOUR</div>
+    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%; z-index: 2;"></div>
+    <div class="menu-list">TOUR</div>
 </div>
 <div style="display: flex; margin: 0.5rem;">
-    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%;"></div>
-    <div>ACTIVITY</div>
+    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%; z-index: 2;"></div>
+    <div class="menu-list">ACTIVITY</div>
 </div>
 <div style="display: flex; margin: 0.5rem;">
-    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%;"></div>
-    <div>BUS</div>
+    <div style="width: 3rem; height: 3rem; background-color: aqua; border-radius: 50%; z-index: 2;"></div>
+    <div class="menu-list">BUS</div>
 </div>
 
 </div>
 </section>
 <section class="section">
 
-    <div style="position: absolute; bottom: 1rem;">
+    <div class="slide-container" style="position: absolute; bottom: 1rem;">
 <div id="slide-event-today">
     <div style="max-width: 350px; height: 20px; margin-left: auto; margin-right: auto; font-weight: bold; color: rgb(86, 104, 104); font-size: 18px; display: flex; position: relative;"><p>☛ Today Activities</p>&nbsp;<p style="text-align: end;font-size: 18px;font-weight: 600; color: rgb(255, 255, 255); background-color: rgb(86, 104, 104); padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 25px;"> <span id="current_day"></span> <span id="current_month"></span> <span id="current_year"></span></p></div>
         <div class="0 slide-event" style="display:none">
@@ -336,7 +336,7 @@
     <div style="max-width: 350px; height: 20px; margin-left: auto; margin-right: auto; font-weight: bold; color: rgb(86, 104, 104); font-size: 18px; display: flex; position: relative;"><p>☛ Tomorrow Activities</p>&nbsp;<p style="text-align: end;font-size: 18px;font-weight: 600; color: rgb(255, 255, 255); background-color: rgb(86, 104, 104); padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 25px;"> <span id="current_day_tmr"></span> <span id="current_month_tmr"></span> <span id="current_year_tmr"></span></p></div>
         <div id="sun" class="slide-event 1" style="display:none">
             <section class="mb-5">
-                <div id="carousel-0" class="carousel slide" data-ride="carousel">
+                <div id="carousel-0-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -357,21 +357,21 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-0" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-0-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-0" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-0-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-0" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-0" data-slide-to="1"></li>
-                            <li data-target="#carousel-0" data-slide-to="2"></li>
-                            <li data-target="#carousel-0" data-slide-to="3"></li>
+                            <li data-target="#carousel-0-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-0-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-0-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-0-1" data-slide-to="3"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -380,7 +380,7 @@
         </div>
         <div id="mon" class="slide-event 2" style="display:none">
             <section class="mb-5">
-                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <div id="carousel-1-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -401,21 +401,21 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-1-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-1-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-1" data-slide-to="1"></li>
-                            <li data-target="#carousel-1" data-slide-to="2"></li>
-                            <li data-target="#carousel-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-1-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-1-1" data-slide-to="3"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -423,7 +423,7 @@
         </div>
         <div id="tue" class="slide-event 3" style="display:none">
             <section class="mb-5">
-                <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                <div id="carousel-2-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -440,20 +440,20 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-2-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-2-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-2" data-slide-to="1"></li>
-                            <li data-target="#carousel-2" data-slide-to="2"></li>
+                            <li data-target="#carousel-2-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-2-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-2-1" data-slide-to="2"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -462,7 +462,7 @@
         </div>
         <div id="wed" class="slide-event 4" style="display:none">
             <section class="mb-5">
-                <div id="carousel-3" class="carousel slide" data-ride="carousel">
+                <div id="carousel-3-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -483,21 +483,21 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-3-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-3-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-3" data-slide-to="1"></li>
-                            <li data-target="#carousel-3" data-slide-to="2"></li>
-                            <li data-target="#carousel-3" data-slide-to="3"></li>
+                            <li data-target="#carousel-3-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-3-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-3-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-3-1" data-slide-to="3"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -507,7 +507,7 @@
         </div>
         <div id="thu" class="slide-event 5" style="display:none">
             <section class="mb-5">
-                <div id="carousel-4" class="carousel slide" data-ride="carousel">
+                <div id="carousel-4-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -524,20 +524,20 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-4-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-4" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-4-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-4" data-slide-to="1"></li>
-                            <li data-target="#carousel-4" data-slide-to="2"></li>
+                            <li data-target="#carousel-4-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-4-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-4-1" data-slide-to="2"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -546,7 +546,7 @@
         </div>
         <div id="fri" class="slide-event 6" style="display:none">
             <section class="mb-5">
-                <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                <div id="carousel-5-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -567,21 +567,21 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-5-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-5-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-5" data-slide-to="1"></li>
-                            <li data-target="#carousel-5" data-slide-to="2"></li>
-                            <li data-target="#carousel-5" data-slide-to="3"></li>
+                            <li data-target="#carousel-5-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-5-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-5-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-5-1" data-slide-to="3"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
@@ -589,7 +589,7 @@
         </div>
         <div id="sat" class="slide-event 7" style="display:none">
             <section class="mb-5">
-                <div id="carousel-6" class="carousel slide" data-ride="carousel">
+                <div id="carousel-6-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
             
                       <div class="carousel-item active">
@@ -606,20 +606,20 @@
             
                     </div><!-- e carousel-inner -->
                     
-                    <a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-6-1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     
-                    <a class="carousel-control-next" href="#carousel-6" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-6-1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only"></span>
                     </a>
                     <div class="slide-dot">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-6" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-6" data-slide-to="1"></li>
-                            <li data-target="#carousel-6" data-slide-to="2"></li>
+                            <li data-target="#carousel-6-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-6-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-6-1" data-slide-to="2"></li>
                         </ol>
                     </div>   
                 </div><!-- e carousel -->
