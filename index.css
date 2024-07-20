@@ -4,6 +4,7 @@
 }
 
 html {
+  visibility:hidden;
   height: 100svh;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;

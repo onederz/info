@@ -13,7 +13,6 @@ var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="
 var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[d.getMonth()],day_of_month=d.getDate() + 1,current_year=d.getFullYear(),dayOfMonthElement=document.getElementById("current_day_tmr"),currentMonthElement=document.getElementById("current_month_tmr"),currentYearElement=document.getElementById("current_year_tmr");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
 
 
-
  /* Sunday carousel */
  $('#carousel-0').carousel({
   interval: 6000,
@@ -110,4 +109,9 @@ var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="
   interval: 6000,
   wrap: true,
   keyboard: true
+});
+
+/* loading */
+window.addEventListener('load', function () {
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
