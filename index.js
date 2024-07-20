@@ -113,5 +113,5 @@ var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="
 
 /* loading */
 window.addEventListener('load', function () {
-  document.getElementsByTagName(".section")[0].style.visibility = "visible";
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
