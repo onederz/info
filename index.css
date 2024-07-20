@@ -140,11 +140,11 @@ a {
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
-  background-color: rgba(65, 66, 66, 0.5);
+  background-color: rgba(215, 217, 217, 0.5);
 }
 
 .carousel-indicators li.active {
-background-color: rgb(52, 86, 99);
+background-color: rgb(36, 75, 80);
 }
 
 .carousel-item {
@@ -171,8 +171,125 @@ display: flex;
   padding: 0.3rem;
   margin-top: -1rem;
   font-weight: bold;
-  background-color: aquamarine;
+  background-color: rgb(137, 183, 195);
   width: 95px;
   height: 30px;
   box-shadow: 2px 2px 2px ;
+}
+.bg-1 {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 17rem;
+  height: 20rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+.bg-2 {
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 10rem;
+  height: 20rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-3 {
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 3rem;
+  height: 4rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-4 {
+  top: 80px;
+  right: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 2rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+.bg-5 {
+  top: 120px;
+  right: 20px;
+  z-index: -1;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-6 {
+  bottom: 5px;
+  left: 5px;
+  z-index: -1;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-7 {
+  bottom: 5px;
+  right: 5px;
+  z-index: -1;
+  width: 5rem;
+  height: 2rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-8 {
+  bottom: 50px;
+  right: 0;
+  z-index: -1;
+  width: 5rem;
+  height: 12rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-9 {
+  top: 50px;
+  left: 0;
+  z-index: -1;
+  width: 5rem;
+  height: 12rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+.bg-10 {
+  top: 90px;
+  left: 5px;
+  z-index: -1;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(35, 88, 88, 0.501);
+  position: absolute;
+  animation: bg-fade 1s linear;
+}
+
+@keyframes bg-fade {
+  0% {
+    width: 1rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
