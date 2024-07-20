@@ -107,6 +107,9 @@ a {
 
 
 .carousel img {
+  background-image: url(slide/small-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -177,6 +180,7 @@ display: flex;
   box-shadow: 2px 2px 2px ;
 }
 .bg-1 {
+  filter: blur(1px);
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -187,6 +191,7 @@ display: flex;
   animation: bg-fade 1s linear;
 }
 .bg-2 {
+  filter: blur(1px);
   top: 0;
   right: 0;
   z-index: -1;
@@ -198,6 +203,7 @@ display: flex;
 }
 
 .bg-3 {
+  filter: blur(1px);
   top: 0;
   right: 0;
   z-index: -1;
@@ -209,6 +215,7 @@ display: flex;
 }
 
 .bg-4 {
+  filter: blur(1px);
   top: 80px;
   right: 0;
   z-index: -1;
@@ -219,6 +226,7 @@ display: flex;
   animation: bg-fade 1s linear;
 }
 .bg-5 {
+  filter: blur(1px);
   top: 120px;
   right: 20px;
   z-index: -1;
@@ -230,6 +238,7 @@ display: flex;
 }
 
 .bg-6 {
+  filter: blur(1px);
   bottom: 5px;
   left: 5px;
   z-index: -1;
@@ -241,6 +250,7 @@ display: flex;
 }
 
 .bg-7 {
+  filter: blur(1px);
   bottom: 5px;
   right: 5px;
   z-index: -1;
@@ -252,6 +262,7 @@ display: flex;
 }
 
 .bg-8 {
+  filter: blur(1px);
   bottom: 50px;
   right: 0;
   z-index: -1;
@@ -263,6 +274,7 @@ display: flex;
 }
 
 .bg-9 {
+  filter: blur(1px);
   top: 50px;
   left: 0;
   z-index: -1;
@@ -274,6 +286,7 @@ display: flex;
 }
 
 .bg-10 {
+  filter: blur(1px);
   top: 90px;
   left: 5px;
   z-index: -1;
