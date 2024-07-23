@@ -3,6 +3,25 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 html {
   visibility:hidden;
   height: 100svh;
@@ -50,9 +69,6 @@ a {
 
 
 .carousel img {
-  background-image: url(slide/small-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -103,11 +119,13 @@ padding: 1rem;
   right: 0;
 }
 .cover-y-scroll {
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   position: relative;
   flex: none;
-  width: 100%;
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -277,4 +295,28 @@ display: flex;
 
 .image-activity {
   max-width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cover-y-scroll {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    position: relative;
+    flex: none;
+    height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .section-y {
+    height: 100svh;
+    scroll-snap-align: center;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
