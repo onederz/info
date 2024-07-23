@@ -21,6 +21,8 @@ body {
   width: 40px;
 }
 a {
+  color: black;
+  z-index: 100;
   text-decoration: none;
 }
 
