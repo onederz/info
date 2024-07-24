@@ -3,25 +3,6 @@
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #313f41c4; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #15303d; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-
 html {
   visibility:hidden;
   height: 100svh;
