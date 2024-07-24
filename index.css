@@ -9,12 +9,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100; 
+  background: #313f41c4; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #15303d; 
 }
 
 /* Handle on hover */
@@ -119,9 +119,9 @@ padding: 1rem;
   right: 0;
 }
 .cover-y-scroll {
+  max-width: 400px;
   margin-right: auto;
   margin-left: auto;
-  width: 500px;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   position: relative;
@@ -297,25 +297,7 @@ display: flex;
   max-width: 500px;
 }
 
-@media only screen and (max-width: 600px) {
-  .cover-y-scroll {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth;
-    position: relative;
-    flex: none;
-    height: 100svh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-  }
-  
-  .section-y {
-    height: 100svh;
-    scroll-snap-align: center;
-  }
+@media only screen and (min-width: 400px) {
   ::-webkit-scrollbar {
     display: none;
   }
