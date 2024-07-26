@@ -132,3 +132,11 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+
+
+/* change color on click */
+$("a.link").click(function(){
+  $("a.link").css("background-color", "#40826D");
+$(this).css("background-color", "#4a482b");
+});
+
