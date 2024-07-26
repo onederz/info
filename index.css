@@ -125,10 +125,9 @@ padding: 1rem;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   position: relative;
-  flex: none;
   height: 100svh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
@@ -491,7 +490,7 @@ p {
 }
 
 .link {
-  background-color: rgb(64, 130, 109);
+  background-color: #0a425c;
   border: 1px solid black;
   padding: 0.2rem;
   margin: 0.2rem;
@@ -509,15 +508,34 @@ p {
 }
 
 .tittle-tour-name {
-  color: #67a8c8;
+  color: #4ab85c;
   font-weight: bold;
 }
 
-#show-close {
+.far-temple-price {
+  margin-top: -6px;
+  margin-left: 0.2rem;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: #0a425c;
+  position: absolute;
+  box-shadow: black 5px 5px 20px 5px;
+}
+
+.fartemple-name {
+  text-align: center;
+  color: #13c07e;
+  font-weight: bold;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+#show-close, #show-close-grand {
   display: none;
 }
 
-#show-close:target {
+#show-close:target, #show-close-grand:target {
   display: block;
 }
 
@@ -536,11 +554,31 @@ p {
   color: white;
   max-width: 400px;
   height: 300px;
-  background-color: #4a482b;
+  background-color: #205164;
   position: absolute;
   opacity: 1;
   transition: opacity 0.5s linear;
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+#show-banteaysrei, #show-bengmealea, #show-kohker {
+  position: absolute;
+  opacity: 0;
+}
+
+#show-banteaysrei:target, #show-bengmealea:target, #show-kohker:target {
+  font-size: 13px;
+  background-color: #205164;
+  height: 100%;
+  max-width: 100%;
+  left: 70px;
+  padding-left: 75px;
+  padding-top: 0.5rem;
+  color: white;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.5s linear;
+  overflow-wrap: break-word;
 }
 
 .close-img {
@@ -567,7 +605,7 @@ p {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 22px solid #4a482b;
+	border-bottom: 22px solid #205164;
 }
 
 .angle-12 {
@@ -579,7 +617,7 @@ p {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 22px solid #4a482b;
+	border-bottom: 22px solid #205164;
 }
 
 .angle-15 {
@@ -591,7 +629,7 @@ p {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 22px solid #4a482b;
+	border-bottom: 22px solid #205164;
 }
 
 .angle-7 {
@@ -603,7 +641,7 @@ p {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 22px solid #4a482b;
+	border-bottom: 22px solid #205164;
 }
 
 .angle-18 {
@@ -615,60 +653,6 @@ p {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 22px solid #4a482b;
+	border-bottom: 22px solid #205164;
 }
 
-details {
-  padding: 0.5rem;
-  position:relative;
-  }
-  details summary {
-  text-align: start;
-  font-weight: bold;
-  display:block;
-  cursor: pointer;
-  color: rgb(92, 8, 8);
-  }
-  details summary:focus {
-  outline:none;
-  }
-  details[open] {
-  display:block;
-  padding-bottom:25px;
-  animation: open .2s linear;
-  }
-  details[open] summary {
-  position:absolute;
-  bottom: 0;
-  left:0;
-  }
-  
-  details #open{padding-left:5px;text-align:middle;}
-  details #open:after{
-    display: inline-block;
-    position:relative;
-    top: -3px;
-    padding-left: 8px;
-    content: "\00bb";
-    transform: rotate(90deg);
-  }
-  details[open] #open{display:none;}
-  details #close{display:none;}
-  details[open] #close{display:block;}
-  
-  ::-webkit-details-marker {display: none;}
-  
-  
-  
-  
-  
-  @keyframes open {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  }

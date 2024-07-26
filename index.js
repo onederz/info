@@ -136,7 +136,7 @@ function myFunction() {
 
 /* change color on click */
 $("a.link").click(function(){
-  $("a.link").css("background-color", "#40826D");
-$(this).css("background-color", "#4a482b");
+  $("a.link").css("background-color", "#0a425c");
+$(this).css("background-color", "#993010");
 });
 
