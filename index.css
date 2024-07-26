@@ -513,6 +513,14 @@ p {
   font-weight: bold;
 }
 
+#show-close {
+  display: none;
+}
+
+#show-close:target {
+  display: block;
+}
+
 #show-6price, #show-12price, #show-15price, #show-7price, #show-18price {
   position: absolute;
   opacity: 0;
