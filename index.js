@@ -140,3 +140,8 @@ $("a.link").click(function(){
 $(this).css("background-color", "#993010");
 });
 
+$("p.link2").click(function(){
+  $("p.link2").css("background-color", "#0a425c");
+$(this).css("background-color", "#993010");
+});
+
